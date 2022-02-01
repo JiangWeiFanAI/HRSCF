@@ -20,7 +20,7 @@ The code is built and tested on Windows 10  environment (Python3.7, PyTorch_1.3.
 ## Introduction
 Downscaling has become a hot research content in super-resolution and analysis and computer vision because of its high application value in many real-life scenarios. When it applies to rainfall forecasts, This will have immeasurable value to people's lives and climate-sensitive industries, such as agriculture, mining and constructions. However, the existing algorithms aim to downscale probabilistic forecasts in terms of statistics, which are time-consuming and do not have a skilful improvement. Concerning the deep learning method on rainfall forecasts, recent work focus on making a precision mapping from low resolution to high resolution where the ensemble is not considered as a fact. However, for the physical model of probabilistic prediction, it is also impossible to carry out information statistics. To this end, we apply the deep learning method to implement a downscaling model for the model with ensemble forecasts. After many repeated experiments, I proposed the VDSRd model to downscaling rainfall forecasts with 11 ensemble number and leading 217 days and achieved skill on 8.1\% on first seven days forecasts on average and -4.9\% on 217 days leading by CRPSS(Continuous Ranked Probability skill score) .
 
-![VDSRD](.\data\img\net.png)
+![VDSRD](/data/img/net.png)
 
 
 ## Train
@@ -64,27 +64,27 @@ After that use save_all_results ipy to generate all visulized and statistical re
 
 ## Results
 ### Quantitative Results
-![table](.\data\img\table.png)
+![table](/data/img/table.png)
 
-![tabless](.\data\img\tabless.png)
+![tabless](/data/img/tabless.png)
 
 
 
-For more results, please refer to our [main papar](.\demo\thesis.pdf) 
+For more results, please refer to our [main papar](/demo/thesis.pdf) 
 ### Visual Results
 Map View of Results:
 
     1.CRPS Skill Score for lead time 0 to 45 days in average in Australia. Sub-figure a is whole Australia and b is important 50 observation station point.
 
-![Map View of Results](.\data\img\aus1.png)
+![Map View of Results](/data/img/aus1.png)
 
     2. Demonstration of rainfall forecast examples:
     
-![Map View of Results](.\data\img\ensemble.png)
+![Map View of Results](/data/img/ensemble.png)
 
     3.CRPS_{SS} as a function of lead time for bicubic, calibration and VDSRd_{pr}, and VDSRd_{pr,zg} of daily accumulated rainfall totals. The light grey shade indicates the 90\% confidence interval of CRPS_{SS} calculated from all the grid points in Australia and all the 48 initialization dates, the dark grey shade indicates the 50\% confidence interval, and the red line indicates the median.
     
-![Map View of Results](.\data\img\interval.png)
+![Map View of Results](/data/img/interval.png)
 
 ## Citation
 If you find the code helpful in your resarch or work, please cite the following papers.
