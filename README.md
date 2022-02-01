@@ -13,10 +13,9 @@ The code is built and tested on Windows 10  environment (Python3.7, PyTorch_1.3.
 ## Contents
 1. [Introduction](#introduction)
 2. [Train](#train)
-3. [Test](#test)
-4. [Results](#results)
-5. [Citation](#citation)
-6. [Acknowledgements](#acknowledgements)
+3. [Results](#results)
+4. [Citation](#citation)
+
 
 ## Introduction
 Downscaling has become a hot research content in super-resolution and analysis and computer vision because of its high application value in many real-life scenarios. When it applies to rainfall forecasts, This will have immeasurable value to people's lives and climate-sensitive industries, such as agriculture, mining and constructions. However, the existing algorithms aim to downscale probabilistic forecasts in terms of statistics, which are time-consuming and do not have a skilful improvement. Concerning the deep learning method on rainfall forecasts, recent work focus on making a precision mapping from low resolution to high resolution where the ensemble is not considered as a fact. However, for the physical model of probabilistic prediction, it is also impossible to carry out information statistics. To this end, we apply the deep learning method to implement a downscaling model for the model with ensemble forecasts. After many repeated experiments, I proposed the VDSRd model to downscaling rainfall forecasts with 11 ensemble number and leading 217 days and achieved skill on 8.1\% on first seven days forecasts on average and -4.9\% on 217 days leading by CRPSS(Continuous Ranked Probability skill score) .
@@ -45,7 +44,7 @@ To reduce IO time, we round the data to the same geographic location, longtitude
     python3 transform_access_pr.py
     python3 transform_Barra_data.py
 
-    ```
+ ```
 
 ### Begin to train
 
@@ -56,7 +55,7 @@ Cd to 'wj1671' , run the following scriptto train model.
 
 ```bash
     python train.py 
-    ```
+```
 
 ### Begin to evaluation
 Cd to '..' back to main folder , Grab the best model to /save path, and use jupyter notebooks to generate climatology, Bicubic, bcsd, and VDSRd data respectively.
