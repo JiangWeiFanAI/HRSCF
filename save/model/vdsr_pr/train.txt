@@ -1,0 +1,102 @@
+Let's use0GPUs!
+start
+Let's use0GPUs!
+start
+Let's use1GPUs!
+start
+epoche: 0,lr: 0.001000,time cost 855.060491 s, train_loss: 1.670866 
+evalutaion: time cost 117.047813 s, test_loss: 1.621420, psnr: avg_psnr 27.926811
+saveing model
+saveing model
+epoche: 1,lr: 0.000990,time cost 392.254455 s, train_loss: 1.622632 
+saveing model
+epoche: 2,lr: 0.000980,time cost 392.772998 s, train_loss: 1.621654 
+saveing model
+epoche: 3,lr: 0.000970,time cost 392.133070 s, train_loss: 1.606731 
+saveing model
+epoche: 4,lr: 0.000961,time cost 392.441615 s, train_loss: 1.607137 
+saveing model
+epoche: 5,lr: 0.000951,time cost 390.814277 s, train_loss: 1.604612 
+saveing model
+epoche: 6,lr: 0.000941,time cost 391.441185 s, train_loss: 1.596798 
+saveing model
+epoche: 7,lr: 0.000932,time cost 394.973363 s, train_loss: 1.600021 
+saveing model
+epoche: 8,lr: 0.000923,time cost 395.779630 s, train_loss: 1.593859 
+saveing model
+epoche: 9,lr: 0.000914,time cost 397.145262 s, train_loss: 1.599551 
+saveing model
+epoche: 10,lr: 0.000904,time cost 395.646787 s, train_loss: 1.591165 
+evalutaion: time cost 46.374074 s, test_loss: 1.593907, psnr: avg_psnr 28.010941
+saveing model
+saveing model
+epoche: 11,lr: 0.000895,time cost 393.650973 s, train_loss: 1.590717 
+saveing model
+epoche: 12,lr: 0.000886,time cost 391.472151 s, train_loss: 1.586214 
+saveing model
+epoche: 13,lr: 0.000878,time cost 391.088655 s, train_loss: 1.585148 
+saveing model
+epoche: 14,lr: 0.000869,time cost 391.700216 s, train_loss: 1.585136 
+saveing model
+epoche: 15,lr: 0.000860,time cost 394.760766 s, train_loss: 1.582637 
+saveing model
+epoche: 16,lr: 0.000851,time cost 392.728626 s, train_loss: 1.589131 
+saveing model
+epoche: 17,lr: 0.000843,time cost 392.308938 s, train_loss: 1.593751 
+saveing model
+epoche: 18,lr: 0.000835,time cost 392.501912 s, train_loss: 1.579742 
+saveing model
+epoche: 19,lr: 0.000826,time cost 392.233074 s, train_loss: 1.582936 
+saveing model
+epoche: 20,lr: 0.000818,time cost 393.277213 s, train_loss: 1.582368 
+evalutaion: time cost 80.572647 s, test_loss: 1.598329, psnr: avg_psnr 28.000715
+saveing model
+saveing model
+epoche: 21,lr: 0.000810,time cost 393.904177 s, train_loss: 1.580487 
+saveing model
+epoche: 22,lr: 0.000802,time cost 392.641400 s, train_loss: 1.575407 
+saveing model
+epoche: 23,lr: 0.000794,time cost 393.719372 s, train_loss: 1.576766 
+saveing model
+epoche: 24,lr: 0.000786,time cost 393.066387 s, train_loss: 1.578538 
+saveing model
+epoche: 25,lr: 0.000778,time cost 392.810107 s, train_loss: 1.575725 
+saveing model
+epoche: 26,lr: 0.000770,time cost 392.584354 s, train_loss: 1.579939 
+saveing model
+epoche: 27,lr: 0.000762,time cost 392.254950 s, train_loss: 1.578121 
+saveing model
+epoche: 28,lr: 0.000755,time cost 392.177559 s, train_loss: 1.574785 
+saveing model
+epoche: 29,lr: 0.000747,time cost 392.260939 s, train_loss: 1.573336 
+saveing model
+epoche: 30,lr: 0.000740,time cost 392.606424 s, train_loss: 1.578571 
+evalutaion: time cost 58.559836 s, test_loss: 1.599495, psnr: avg_psnr 27.990345
+saveing model
+saveing model
+epoche: 31,lr: 0.000732,time cost 392.781384 s, train_loss: 1.576713 
+saveing model
+epoche: 32,lr: 0.000725,time cost 392.640035 s, train_loss: 1.570963 
+saveing model
+epoche: 33,lr: 0.000718,time cost 393.838043 s, train_loss: 1.574827 
+saveing model
+epoche: 34,lr: 0.000711,time cost 407.052490 s, train_loss: 1.575288 
+saveing model
+epoche: 35,lr: 0.000703,time cost 409.452678 s, train_loss: 1.572500 
+saveing model
+epoche: 36,lr: 0.000696,time cost 407.048924 s, train_loss: 1.572473 
+saveing model
+epoche: 37,lr: 0.000689,time cost 399.980525 s, train_loss: 1.569743 
+saveing model
+epoche: 38,lr: 0.000683,time cost 400.585911 s, train_loss: 1.570140 
+saveing model
+epoche: 39,lr: 0.000676,time cost 402.114922 s, train_loss: 1.570628 
+saveing model
+epoche: 40,lr: 0.000669,time cost 402.694099 s, train_loss: 1.571925 
+evalutaion: time cost 81.590955 s, test_loss: 1.572175, psnr: avg_psnr 28.057631
+saveing model
+saveing model
+epoche: 41,lr: 0.000662,time cost 412.733713 s, train_loss: 1.569343 
+saveing model
+epoche: 42,lr: 0.000656,time cost 405.474205 s, train_loss: 1.569341 
+saveing model
