@@ -61,29 +61,6 @@ Cd to '..' back to main folder , Grab the best model to /save path, and use jupy
 After that use save_all_results ipy to generate all visulized and statistical results.
 
 
-## Results
-### Quantitative Results
-![table](/data/img/table.png)
-
-![tabless](/data/img/tabless.png)
-
-
-
-For more results, please refer to our [main papar](/demo/thesis.pdf) 
-### Visual Results
-Map View of Results:
-
-    1.CRPS Skill Score for lead time 0 to 45 days in average in Australia. Sub-figure a is whole Australia and b is important 50 observation station point.
-
-![Map View of Results](/data/img/aus1.png)
-
-    2. Demonstration of rainfall forecast examples:
-    
-![Map View of Results](/data/img/ensemble.png)
-
-    3.CRPS_{SS} as a function of lead time for bicubic, calibration and VDSRd_{pr}, and VDSRd_{pr,zg} of daily accumulated rainfall totals. The light grey shade indicates the 90\% confidence interval of CRPS_{SS} calculated from all the grid points in Australia and all the 48 initialization dates, the dark grey shade indicates the 50\% confidence interval, and the red line indicates the median.
-    
-![Map View of Results](/data/img/interval.png)
 
 ## Citation
 If you find the code helpful in your resarch or work, please cite the following papers.
