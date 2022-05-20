@@ -7,7 +7,7 @@
 
 The code is built and tested on Windows 10  environment (Python3.7, PyTorch_1.3.0, netCDF4_1.5.3, basemap_1.2.1, matplotlib_3.1.3,libtiff_0.4.2, xarray, CUDA10.2, cuDNN7.2) with Rtx2070 GPU. And push to [NCI](https://nci.org.au/) for traning and evaluation.
 
-The tool will be include [Panoply]([https://panoply.io/](https://www.giss.nasa.gov/tools/panoply/))
+The tool will be include [Panoply]([https://panoply.io/](https://www.giss.nasa.gov/tools/panoply/)
 
 
 
