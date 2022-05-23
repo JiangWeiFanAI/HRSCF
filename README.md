@@ -89,7 +89,7 @@ After that use save_all_results ipy to generate all visulized and statistical re
 
 ### Visual Results
 
-| ![Watch the video](https://img.youtube.com/vi/xf3fCOja1_4/maxresdefault.jpg)](https://youtu.be/xf3fCOja1_4) | 
+| ![Watch the video](https://img.youtube.com/vi/xf3fCOja1_4/maxresdefault.jpg)(https://youtu.be/xf3fCOja1_4) | 
 |:--:| 
 | *A* |
 
