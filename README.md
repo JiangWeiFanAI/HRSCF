@@ -67,16 +67,31 @@ After that use save_all_results ipy to generate all visulized and statistical re
 
 ## Results
 ### CRPS comparison
-![Average CRPS Skill Scores across Australia for forecasts made in 2012](/data/img/crps2012_whole_mean.png)
+| ![space-1.jpg](/data/img/crps2012_whole_mean.png) | 
+|:--:| 
+| *Average CRPS Skill Scores across Australia for forecasts made in 2012* |
 
-![Average MAE skill scores across Australia for daily precipitation fore-casts made on 48 different initialisation dates in 2012](/data/img/mae2012_whole_mean.png)
+
+| ![space-1.jpg](/data/img/mae2012_whole_mean.png) | 
+|:--:| 
+| *Average MAE skill scores across Australia for daily precipitation fore-casts made on 48 different initialisation dates in 2012* |
 
 
-![Average CRPS Skill Scores across Australia for forecasts made in 2010](/data/img/crps2010_whole_mean.png)
+| ![space-1.jpg](/data/img/crps2010_whole_mean.png) | 
+|:--:| 
+| *Average CRPS Skill Scores across Australia for forecasts made in 2010* |
 
-![Average MAE skill scores across Australia for daily precipitation fore-casts made on 48 different initialisation dates in 2010](/data/img/mae2010_whole_mean.png)
+
+| ![space-1.jpg](/data/img/mae2010_whole_mean.png) | 
+|:--:| 
+| *Average MAE skill scores across Australia for daily precipitation fore-casts made on 48 different initialisation dates in 2010* |
+
 
 ### Visual Results
+
+| ![Watch the video](https://img.youtube.com/vi/xf3fCOja1_4/maxresdefault.jpg)(https://youtu.be/xf3fCOja1_4) | 
+|:--:| 
+| *A* |
 
 
 ## Citation
