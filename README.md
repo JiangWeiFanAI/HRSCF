@@ -67,8 +67,8 @@ After that use save_all_results ipy to generate all visulized and statistical re
 
 ## Results
 ### CRPS comparison
-![Average CRPS Skill Scores across Australia for forecasts made in 2012](/data/img/crps2012_whole_mean.png)
-<center>Average CRPS Skill Scores across Australia for forecasts made in 2012</center>
+![Average CRPS Skill Scores across Australia for forecasts made in 2012](/data/img/crps2012_whole_mean.png "Average CRPS Skill Scores across Australia for forecasts made in 2012")
+
 
 ![Average MAE skill scores across Australia for daily precipitation fore-casts made on 48 different initialisation dates in 2012](/data/img/mae2012_whole_mean.png)
 
