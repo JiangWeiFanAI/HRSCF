@@ -11,6 +11,8 @@ The tool will be include [Panoply](https://www.giss.nasa.gov/tools/panoply/), [Q
 
 
 
+
+
 ## Contents
 1. [Introduction](#introduction)
 2. [Train](#train)
@@ -62,6 +64,17 @@ Cd to 'wj1671' , run the following scriptto train model.
 Cd to '..' back to main folder , Grab the best model to /save path, and use jupyter notebooks to generate climatology, Bicubic, bcsd, and VDSRd data respectively.
 After that use save_all_results ipy to generate all visulized and statistical results.
 
+
+## Results
+### CRPS comparison
+![Average CRPS Skill Scores across Australia for forecasts made in 2012](/data/img/crps2012_whole_mean.pdf)
+
+
+
+### Visual Results
+Map View of Results:
+
+    1.CRPS Skill Score for lead time 0 to 45 days in average in Australia. Sub-figure a is whole Australia and b is important 50 observation station point.
 
 
 ## Citation
