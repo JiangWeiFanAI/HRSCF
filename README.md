@@ -85,7 +85,13 @@ After that use save_all_results ipy to generate all visulized and statistical re
 | ![space-1.jpg](/data/img/mae2010_whole_mean.png) | 
 |:--:| 
 | *Average MAE skill scores across Australia for daily precipitation fore-casts made on 48 different initialisation dates in 2010* |
+
+
 ### Visual Results
+
+| ![space-1.jpg](/data/img/2012_by_time_serise_fps5_ver0.1.mp4) | 
+|:--:| 
+| *A* |
 
 
 ## Citation
