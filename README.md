@@ -91,7 +91,7 @@ After that use save_all_results ipy to generate all visulized and statistical re
 
 | ![Watch the video](/data/img/2012_by_time_serise_fps5_ver0.1.gif) | 
 |:--:| 
-| *A* |
+| *Example of ensemble_1 comparison* |
 
 
 ## Citation
