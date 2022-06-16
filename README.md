@@ -61,7 +61,7 @@ Cd to 'wj1671' , run the following scriptto train model.
 ```
 
 ### Begin to evaluation
-Cd to '..' back to main folder , Grab the best model to /save path, and use jupyter notebooks to generate climatology, Bicubic, bcsd, and VDSRd data respectively.
+Cd to '..' back to main folder , Grab the best model to /save path, and use jupyter notebooks to generate climatology, Bicubic, bcsd, and VDSD data respectively.
 After that use save_all_results ipy to generate all visulized and statistical results.
 
 
