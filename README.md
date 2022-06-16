@@ -97,6 +97,16 @@ After that use save_all_results ipy to generate all visulized and statistical re
 ## Citation
 If you find the code helpful in your resarch or work, please cite the following papers.
 ```
+@article{Jin.etal.VDSD,
+title = {Downscaling Long Lead Time Daily Rainfall Ensemble Forecasts through Deep Learning},
+author ={Huidong Jin and Weifan Jiang and Minzhe Chen and Ming Li and K. Shuvo Bakar and Quanxi Shao},
+journal = {Climate Dynamics},
+volume = {},
+pages = {},
+year = {2022},
+note={Submitted in May 2022}
+}
+
 @inproceedings{kim2016accurate,
   title={Accurate image super-resolution using very deep convolutional networks},
   author={Kim, Jiwon and Lee, Jung Kwon and Lee, Kyoung Mu},
