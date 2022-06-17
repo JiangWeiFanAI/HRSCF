@@ -1,15 +1,10 @@
 # HRSCF_v1
 
 
-[Warren Jin](https://people.csiro.au/J/W/Warren-Jin), [Weifan Jiang](https://www.linkedin.com/in/jeffery-jiang-3b966615a/), Minzhe Chen, Ming Li, K.shuvo Bakar,
-[Downscaling Long Lead Time Daily RainfallEnsemble Forecasts through Deep Learning](https://github.com/JiangWeiFanAI/HRSCF/blob/main/VDSD4cd.pdf)
+[Warren Jin](https://people.csiro.au/J/W/Warren-Jin), [Weifan Jiang](https://www.linkedin.com/in/jeffery-jiang-3b966615a/), Minzhe Chen, Ming Li, K.Shuvo Bakar,Quanxi Shao, [Downscaling Long Lead Time Daily RainfallEnsemble Forecasts through Deep Learning](https://github.com/JiangWeiFanAI/HRSCF/blob/main/VDSD4cd.pdf)
 
 
-The code is built and tested on Windows 10  environment (Python3.7, PyTorch_1.3.0, netCDF4_1.5.3, basemap_1.2.1, matplotlib_3.1.3,libtiff_0.4.2, xarray, CUDA10.2, cuDNN7.2) with Rtx2070 GPU. And push to [NCI](https://nci.org.au/) for traning and evaluation.
-
-The tool will be include [Panoply](https://www.giss.nasa.gov/tools/panoply/), [Qgis](https://qgis.org/en/site/)
-
-
+The code is built and tested on Windows 10  environment (Python3.7, PyTorch_1.3.0, netCDF4_1.5.3, basemap_1.2.1, matplotlib_3.1.3,libtiff_0.4.2, xarray, CUDA10.2, cuDNN7.2) with Rtx2070 GPU. And push to [NCI](https://nci.org.au/) for training and evaluation.
 
 
 
@@ -21,7 +16,7 @@ The tool will be include [Panoply](https://www.giss.nasa.gov/tools/panoply/), [Q
 
 
 ## Introduction
-Downscaling has become a hot research content in super-resolution and analysis and computer vision because of its high application value in many real-life scenarios. When it applies to rainfall forecasts, This will have immeasurable value to people's lives and climate-sensitive industries, such as agriculture, mining and constructions. However, the existing algorithms aim to downscale probabilistic forecasts in terms of statistics, which are time-consuming and do not have a skilful improvement. Concerning the deep learning method on rainfall forecasts, recent work focus on making a precision mapping from low resolution to high resolution where the ensemble is not considered as a fact. However, for the physical model of probabilistic prediction, it is also impossible to carry out information statistics. To this end, we apply the deep learning method to implement a downscaling model for the model with ensemble forecasts. After many repeated experiments, I proposed the VDSD model to downscaling rainfall forecasts with 11 ensemble number and leading 217 days and achieved skill on 8.1\% on first seven days forecasts on average and -4.9\% on 217 days leading by CRPSS(Continuous Ranked Probability skill score) .
+Downscaling has become a hot research topic n because of its high application value in many real-life scenarios. When it applies to rainfall forecasts, this will have immeasurable value to people's lives and climate-sensitive industries, such as agriculture, mining and construction. However, the existing algorithms aim to downscale probabilistic forecasts in terms of statistics, which are time-consuming and do not have a skilful improvement. Concerning the deep learning method on rainfall forecasts, recent work focuses on making a precision mapping from low resolution to high resolution where the ensemble has not been considered. However, for the physical model of probabilistic prediction, it is also impossible to carry out information statistics. To this end, we apply the deep learning method to implement a downscaling model for the model with ensemble forecasts. After many experiments, we proposed the VDSD model to downscaling rainfall forecasts with 11 ensemble number and leading 217 days and achieved skill of 8.1\% on the first seven days forecasts on average and -4.9\% on 217 days measured by CRPSS(Continuous Ranked Probability skill score) .
 
 ![VDSD](/data/img/net.png)
 
@@ -29,19 +24,19 @@ Downscaling has become a hot research content in super-resolution and analysis a
 ## Train
 ### Training data 
 
-In 2017, the Australian Meteorology Bureau announced the next generation access series GCM, which were later installed on supercomputers in the office in 2018. A worldwide combined model, the seasonal climate and earth system Simulator (ACCESS-S), is based on the UK's global combined seasonal prediction system glosea5-gc2. The ACCESS-S contains 11 different ensemble members for seasonal forecasting and leading 217 days due to disruptions and improved ensemble technology,  including ten disturbed members and oneunperturbed centre member. 
+In 2017, the Australian Meteorology Bureau announced the next generation access series GCM, which was later installed on supercomputers in the office in 2018. A worldwide combined model, the seasonal climate and earth system Simulator (ACCESS-S), is based on the UK's global combined seasonal prediction system glosea5-gc2. The ACCESS-S contains 11 different ensemble members for seasonal forecasting and leading 217 days due to disruptions and improved ensemble technology,  including ten disturbed members and oneunperturbed centre member. 
 
 
 
 Bureau of Meteorology Atmospheric high-resolution Regional Reanalysis for Australia(BARRA) is Australia's regional climate prediction and numerical climate forecasts models based on an Australian area, using ACCESS-R, Australia's first atmospheric reanalysis model. ACCESS-R employs the UKMO system other than ACCESS-S. In addition, any uncertainty is not considered in this system. i.e. no ensemble member is present.
 
-In the trainingset, we used 60km Raw atmosphere grid ACCESS-S precipitation data as input and 25km BARRA-R data as label.
-All the data was stored on the project named [iu60](http://poama.bom.gov.au/) and [ma05](http://www.bom.gov.au/clim_data/rrp/BARRA_sample/)
-, you need to require permission from [NCI](https://nci.org.au/) on path (g/data/iu60/) and (g/data/ma05/) respectively.
+In the trainingset, we used 60km Raw atmosphere grid ACCESS-S precipitation data as input and 12km BARRA-R data as the target.
+All the data were stored on the project named [iu60](http://poama.bom.gov.au/) and [ma05](http://www.bom.gov.au/clim_data/rrp/BARRA_sample/)
+, you need to require permission from [NCI](https://nci.org.au/) on the paths (g/data/iu60/) and (g/data/ma05/) respectively.
 
 
 ### pre-processing data
-To reduce IO time, we round the data to the same geographic location, longtitude and latitude is 112.9, 154.25, -43.7425, -9.0. Go to data_processing folder and type following command, and the data will be marked and relocated:
+To reduce IO time, we cropped the data to the same geographic region, with longitude and latitude ranges are 112.9 to 154.25 and -43.7425 to -9.0, respectively. Go to the data_processing folder and type the following commands, and the data will be cropped and relocated:
 
  ```bash
     python3 transform_access_pr.py
@@ -61,8 +56,8 @@ Cd to 'wj1671' , run the following scriptto train model.
 ```
 
 ### Begin to evaluation
-Cd to '..' back to main folder , Grab the best model to /save path, and use jupyter notebooks to generate climatology, Bicubic, bcsd, and VDSD data respectively.
-After that use save_all_results ipy to generate all visulized and statistical results.
+Cd to '..' back to the main folder , Grab the best model to /save path, and use jupyter notebooks to generate climatology, Bicubic, bcsd, and VDSD data respectively.
+After that use save_all_results ipy to generate all visualisation and statistical results.
 
 
 ## Results
