@@ -1,7 +1,7 @@
 # HRSCF_v1
 
 
-[Warren Jin](https://people.csiro.au/J/W/Warren-Jin), [Weifan Jiang](https://www.linkedin.com/in/jeffery-jiang-3b966615a/), Minzhe Chen, Ming Li, K.Shuvo Bakar,Quanxi Shao, [Downscaling Long Lead Time Daily RainfallEnsemble Forecasts through Deep Learning](https://github.com/JiangWeiFanAI/HRSCF/blob/main/VDSD4cd.pdf)
+[Warren Jin](https://people.csiro.au/J/W/Warren-Jin), [Weifan Jiang](https://www.linkedin.com/in/jeffery-jiang-3b966615a/), Minzhe Chen, Ming Li, K.Shuvo Bakar, Quanxi Shao, [Downscaling Long Lead Time Daily RainfallEnsemble Forecasts through Deep Learning](https://github.com/JiangWeiFanAI/HRSCF/blob/main/VDSD4cd.pdf)
 
 
 The code is built and tested on Windows 10  environment (Python3.7, PyTorch_1.3.0, netCDF4_1.5.3, basemap_1.2.1, matplotlib_3.1.3,libtiff_0.4.2, xarray, CUDA10.2, cuDNN7.2) with Rtx2070 GPU. And push to [NCI](https://nci.org.au/) for training and evaluation.
