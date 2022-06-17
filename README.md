@@ -31,8 +31,7 @@ In 2017, the Australian Meteorology Bureau announced the next generation access 
 Bureau of Meteorology Atmospheric high-resolution Regional Reanalysis for Australia(BARRA) is Australia's regional climate prediction and numerical climate forecasts models based on an Australian area, using ACCESS-R, Australia's first atmospheric reanalysis model. ACCESS-R employs the UKMO system other than ACCESS-S. In addition, any uncertainty is not considered in this system. i.e. no ensemble member is present.
 
 In the trainingset, we used 60km Raw atmosphere grid ACCESS-S precipitation data as input and 12km BARRA-R data as the target.
-All the data were stored on the project named [iu60](http://poama.bom.gov.au/) and [ma05](http://www.bom.gov.au/clim_data/rrp/BARRA_sample/)
-, you need to require permission from [NCI](https://nci.org.au/) on the paths (g/data/iu60/) and (g/data/ma05/) respectively.
+All the data were stored on the project named [iu60](http://poama.bom.gov.au/) and [ma05](http://www.bom.gov.au/clim_data/rrp/BARRA_sample/), you need to require permission from [NCI](https://nci.org.au/) on the paths (g/data/iu60/) and (g/data/ma05/) respectively.
 
 
 ### pre-processing data
