@@ -47,7 +47,7 @@ To reduce IO time, we cropped the data to the same geographic region, with longi
 
 
 
-Cd to 'wj1671' , run the following scriptto train model.
+Cd to 'wj1671', run the following scriptto train a model.
 
 
 ```bash
